@@ -3,10 +3,13 @@
 A vocabulary for stating, in advance, what an autonomous agent is permitted to
 **do** — and for recording what was decided, whether it was allowed or refused.
 
-**Status: v0.1 draft.** One implementation. Comments and second implementers
+**Status: v0.2 draft.** One implementation. Comments and second implementers
 both welcome; see [Contributing](CONTRIBUTING.md).
 
-- **[Read the specification →](spec/v0.1.md)**
+- **[Read the specification →](spec/v0.2.md)**
+- [v0.1](spec/v0.1.md) — frozen. A published version keeps saying what it said,
+  because implementations of this document produce evidence that is read years
+  later.
 - [Changelog](CHANGELOG.md) · [Versioning policy](VERSIONING.md)
 
 ---
