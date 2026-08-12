@@ -30,9 +30,22 @@ decision somebody makes rather than a thing nobody noticed was overdue.
 2. Copy the specification file here.
 3. Update `CHANGELOG.md` — what moved, and why.
 4. Commit, tag `vMAJOR.MINOR`, push the tag.
-5. Confirm the two copies are byte-identical.
+5. Confirm the two copies agree — see below.
 
-Step 5 is not ceremony. Two copies of a document always drift, and a
-specification that disagrees with itself across two repositories is worse than
-one that is merely out of date, because a reader has no way to tell which is
-current.
+## Step 5 is a test, not a person remembering
+
+Two copies of a document always drift, and a specification that disagrees with
+itself across two repositories is worse than one that is merely out of date,
+because a reader has no way to tell which is current.
+
+`test_the_published_copy_says_the_same_thing`, in the reference
+implementation, compares them whenever this repository is checked out beside
+it. It skips when it is not, because "not checked out" is an environment fact
+rather than a defect.
+
+This step used to ask for the two files to be **byte-identical**. They are
+not, and never were: the source carries a banner saying it is the source, and
+the copy here carries the licence and the versioning policy. Asking for
+something that has never been true is how a release step becomes a box people
+tick. The test compares the **specification body** — everything from §1 to the
+licence — which is the part a reader relies on.
