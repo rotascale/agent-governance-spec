@@ -2,6 +2,22 @@
 
 ## v0.2 — 2026-08-13 (draft)
 
+**Corrected 2026-08-16, while v0.2 is still a draft.** The "out of scope" entry
+for OTel semantic conventions said *"The mapping exists in an SDK."* It does
+not: `opentelemetry` is a dependency of no package in this project, and neither
+SDK contains a span, an exporter or a mapping. The entry now says a mapping is
+the obvious approach, belongs upstream at OpenTelemetry rather than here, and
+does not exist yet.
+
+**v0.1 is unchanged and still carries the original sentence.** Under
+`VERSIONING.md` a published version is frozen: "if a requirement turns out to
+be wrong, the fix ships in a new version and the old one keeps saying what it
+said." That rule exists because implementations of this document produce
+evidence, and a record stating it was produced under `0.1` has to mean in 2030
+what it meant on the day it was written. Quietly correcting v0.1 was the first
+thing attempted here and it was wrong for exactly the reason the document
+gives. Tracked as rotascale-console#204.
+
 **Adds §6, Clearance.** Whether an agent was checked before it was allowed to
 act, and whether that check still holds.
 
