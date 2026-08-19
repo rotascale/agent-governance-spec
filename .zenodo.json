@@ -1,0 +1,30 @@
+{
+  "title": "Agent Governance Specification",
+  "description": "<p>A vocabulary for stating, in advance, what an autonomous agent is permitted to do, and for recording what was decided, whether the action was allowed or refused.</p><p>Existing AI governance addresses the model: what it was trained on, how it scores on evaluations, whether its outputs are toxic. None of that constrains what an agent may do with a payment API in reach. This specification addresses the action instead: the authority an agent holds, how that authority attenuates when delegated, the ordered checks an action is evaluated against, and the record produced either way.</p><p>Published unbranded under Apache 2.0 so that any engine, including a competitor's, may claim conformance to it.</p>",
+  "upload_type": "publication",
+  "publication_type": "technicalnote",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Mitra, Subhadip",
+      "affiliation": "Rotascale"
+    }
+  ],
+  "keywords": [
+    "agent governance",
+    "autonomous systems",
+    "AI accountability",
+    "automated decision-making",
+    "authority delegation",
+    "audit evidence",
+    "verifiable refusal",
+    "AI regulation"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/rotascale/agent-governance-spec",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
